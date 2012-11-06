@@ -1,0 +1,4 @@
+#!/bin/bash
+tmp='Alias '$1' '$2;
+echo $tmp >> /etc/apache2/apache2.conf;
+/etc/init.d/apache2 restart;
