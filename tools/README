@@ -2,3 +2,4 @@ emptytrash - Emptys your trash
 setkeylayout - Binds caps to ctrl
 apachealias [alias] [point to location] - sets up a new alias for apache
 git-linecount - Count number of lines in git repository.
+chname [dir] [text] [type] - Appends $text to the beginning of all files with ending $type and copies them to a new dir in 'pwd' with name $dir.

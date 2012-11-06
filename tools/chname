@@ -1,0 +1,14 @@
+#!/bin/bash
+
+# $1 = Name of new directory
+# $2 = Text to append to file names
+# $3 = Type of files to name
+
+echo 'Creating directory '$1'...';
+mkdir $1;
+
+for i in *$3;
+do
+	#echo $i' to '$1/$2$i;
+	cp $i $1/$2$i;
+done 
