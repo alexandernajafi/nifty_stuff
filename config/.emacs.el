@@ -49,13 +49,13 @@
 (set-face-foreground 'modeline "white")
 
 ;; Enable auto complete with ac-mode
-(add-to-list 'load-path "/home/patrik/.emacs.d/")
+(add-to-list 'load-path "~/.emacs.d/")
 (require 'auto-complete-config)
-(add-to-list 'ac-dictionary-directories "/home/patrik/.emacs.d//ac-dict")
+(add-to-list 'ac-dictionary-directories "~/.emacs.d//ac-dict")
 (ac-config-default)
 
 ;; Enable sr-speedbar. For speedbar docked to emacs window.
-(add-to-list 'load-path "/home/patrik/.emacs.d/plugins/")
+(add-to-list 'load-path "~/.emacs.d/plugins/")
 (require 'sr-speedbar)
 (setq sr-speedbar-right-side nil) ;make it appear on the left
 ;; Uncomment to enable autostart and fixed width of speedbar.
@@ -66,7 +66,7 @@
 
 ;; Enable CEDET
 ;; First install latest version of CEDET. 
-;(load-file "/home/patrik/.emacs.d/plugins/cedet-1.0pre6/common/cedet.el")
+;(load-file "~/.emacs.d/plugins/cedet-1.0pre6/common/cedet.el")
 ;; Install CEDET 1.0pre6 for compatibility with ECB
 
 (global-ede-mode 1)
@@ -75,11 +75,11 @@
 
 ;; Enable JDEE
 ; (Recommended for java developement with ECB)
-;(add-to-list 'load-path "/home/patrik/.emacs.d/plugins/jdee-2.4.1/lisp")
+;(add-to-list 'load-path "~/.emacs.d/plugins/jdee-2.4.1/lisp")
 ;(load "jde")
 
 ;; Enable ECB
-;(add-to-list 'load-path "/home/patrik/.emacs.d/plugins/ecb-2.40")
+;(add-to-list 'load-path "~/.emacs.d/plugins/ecb-2.40")
 ;(require 'ecb)
 
 ;;;; ====== FUNCTIONS ====== ;;;;
