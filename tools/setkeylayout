@@ -1,3 +1,3 @@
 #!/bin/bash
-setxkbmap us -option "ctrl:nocaps"
+setxkbmap se -option "ctrl:nocaps"
 echo "Changed keylayout! did ctrl:nocaps"
