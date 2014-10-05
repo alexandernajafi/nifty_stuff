@@ -1,0 +1,42 @@
+%Nedan satser anger vilka paket som ska användas. 
+%Satserna är inspirerade av en rapport som jag
+%skrev med Niklas Claesson (E07). Efter den rapporten
+%hösten 2009 blev jag frälst i LaTeX!
+
+%För en djupare analys av paketen hänvisar jag er
+%till internet och dess otaliga LaTeX-manualer.
+
+\ProvidesPackage{style}
+\usepackage{graphicx}
+\usepackage[T1]{fontenc}
+\usepackage[latin1]{inputenc}
+
+%Svensk avstavning och svenska begrepp kommer att användas.
+\usepackage[swedish]{babel} 
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{multicol}
+\usepackage{wrapfig}
+\usepackage{subfigure}
+\usepackage{caption}
+
+
+%hyperref-paketet gör så att du kan klicka dig till figurer
+%där de hänvisas. Den ritar även ut de röda rektanglarna
+%kring länkarna.
+\usepackage{hyperref}
+
+\usepackage{gensymb}
+\usepackage{upgreek}
+\usepackage{verbatim}
+
+%Standard i LaTeX är att ett nytt stycke börjar på nästföljande
+%rad, men med en indragning. Vill man istället ha en blank rad
+%mellan styckena används:
+\usepackage{parskip}
+
+
+% ---------- Mina tillägg ------------
+
+\usepackage{mcode} % För inkludering av matlabkod
