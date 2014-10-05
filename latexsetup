@@ -1,0 +1,23 @@
+#!/bin/bash
+
+mkdir $1;
+dir=$(pwd)/$1;
+mkdir $dir/img;
+mkdir $dir/rapport;
+echo $dir
+cd $dir/rapport
+
+# Fetch style.sty
+wget https://raw.githubusercontent.com/alexandernajafi/nifty_stuff/master/latex/style.sty
+
+# Fetch mcode.sty
+wget https://raw.githubusercontent.com/alexandernajafi/nifty_stuff/master/latex/mcode.sty
+
+# Fetch rapport.tex (template)
+wget https://raw.githubusercontent.com/alexandernajafi/nifty_stuff/master/latex/rapport.tex
+
+# Fetch epstopdf converter script
+cd $dir/img;
+wget https://raw.githubusercontent.com/alexandernajafi/nifty_stuff/master/latex/alltopdf
+
+chmod +x alltopdf;
