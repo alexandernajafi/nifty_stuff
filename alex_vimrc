@@ -13,6 +13,7 @@ call vundle#begin()
 "call vundle#begin('~/some/path/here')
  
 Plugin 'Valloric/YouCompleteMe'
+Plugin 'scrooloose/nerdtree'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -20,7 +21,8 @@ filetype plugin indent on    " required
 
 set nocompatible 
 
-set background=dark 
+set background=dark
+set wildmode=longest,list,full
 set wildmenu 
 set showcmd 
 set ignorecase 
