@@ -21,7 +21,8 @@ filetype plugin indent on    " required
 
 set nocompatible 
 
-set background=dark 
+set background=dark
+set wildmode=longest,list,full
 set wildmenu 
 set showcmd 
 set ignorecase 
@@ -76,3 +77,11 @@ set notimeout ttimeout ttimeoutlen=200
 " YCM Settings
 let g:ycm_autoclose_preview_window_after_completion = 1
 let g:ycm_autoclose_preview_window_after_insertion = 1
+
+
+" #########################
+" #### Custom mappings ####
+" #########################
+
+" Press ,* to find the number of occurences of the word under the cursor 
+map ,* *<C-O>:%s///gn<CR>
