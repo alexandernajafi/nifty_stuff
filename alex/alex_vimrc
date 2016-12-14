@@ -85,3 +85,9 @@ let g:ycm_autoclose_preview_window_after_insertion = 1
 
 " Press ,* to find the number of occurences of the word under the cursor 
 map ,* *<C-O>:%s///gn<CR>
+
+" Top copy/paste to system cipboard
+nnoremap <C-y> "+y
+vnoremap <C-y> "+y
+nnoremap <C-p> "+p
+vnoremap <C-p> "+p
