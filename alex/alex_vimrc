@@ -92,3 +92,8 @@ nnoremap <C-y> "+y
 vnoremap <C-y> "+y
 nnoremap <C-p> "+p
 vnoremap <C-p> "+p
+
+syntax on
+
+" For OSX backspace
+set backspace=indent,eol,start
