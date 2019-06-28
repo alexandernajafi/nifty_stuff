@@ -136,4 +136,7 @@ export PATH=~/Library/Python/2.7/bin/:$PATH
 export PATH=/Users/alna/Library/Android/sdk/platform-tools:/Users/alna/Library/Android/sdk/tools:$PATH
 export AWS_PROFILE=playground
 
-echo "hejsan"
+dkillall() {
+    docker kill $(docker ps -q)
+    docker rm $(docker ps -a -q)
+}
