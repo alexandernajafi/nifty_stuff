@@ -97,3 +97,4 @@ syntax on
 
 " For OSX backspace
 set backspace=indent,eol,start
+set encoding=utf-8

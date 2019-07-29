@@ -110,3 +110,12 @@ source ~/.git-prompt.sh
 export PATH=~/Library/Python/2.7/bin/:$PATH
 export PATH=/Users/alna/Library/Android/sdk/platform-tools:/Users/alna/Library/Android/sdk/tools:$PATH
 export AWS_PROFILE=playground
+
+dkillall() {
+	docker kill $(docker ps -q)
+	docker rm $(docker ps -a -q)
+}
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="/Users/alna/.sdkman"
+[[ -s "/Users/alna/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/alna/.sdkman/bin/sdkman-init.sh"
