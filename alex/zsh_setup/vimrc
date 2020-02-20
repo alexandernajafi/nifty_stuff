@@ -1,0 +1,109 @@
+" VIM config
+" Alexander Najafi
+
+" Vundle configuration below
+
+" set nocompatible              " be iMproved, required
+filetype off                  " required
+
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+" alternatively, pass a path where Vundle should install plugins
+"call vundle#begin('~/some/path/here')
+
+Plugin 'Valloric/YouCompleteMe'
+Plugin 'scrooloose/nerdtree'
+Plugin 'tpope/vim-fugitive'
+
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on    " required
+
+set nocompatible 
+
+set background=dark
+set wildmode=longest,list,full
+set wildmenu 
+set showcmd 
+set ignorecase 
+set smartcase
+           
+set hlsearch
+set incsearch
+
+set autoindent
+set copyindent
+set tabstop=4 
+set shiftwidth=4
+set showmatch
+
+set expandtab
+
+set ww=<,>,h,l	"Allow arrow keys, h and l command to move cursor across EOL
+
+set nostartofline " Prevent cursor from changing column when jumping between
+		  " rows
+
+set ruler "Display cursor position on last line
+set number " Display line numbers on the left
+
+set noswapfile 	"Disable the .swp files
+set nobackup 	"No backup files
+
+" Instead of failing a command because of unsaved changes, instead raise a
+" dialogue asking if you wish to save changed files.
+set confirm
+
+" Use visual bell instead of beeping when doing something wrong
+set visualbell
+
+" And reset the terminal code for the visual bell. If visualbell is set, and
+" this line is also included, vim will neither flash nor beep. If visualbell
+" is unset, this does nothing.
+set t_vb=
+
+" Enable use of the mouse for all modes
+set mouse=a
+
+" Set the command window height to 2 lines, to avoid many cases of having to
+" press <Enter> to continue
+set cmdheight=2
+
+
+" Quickly time out on keycodes, but never time out on mappings
+set notimeout ttimeout ttimeoutlen=200
+
+
+" YCM Settings
+let g:ycm_autoclose_preview_window_after_completion = 1
+let g:ycm_autoclose_preview_window_after_insertion = 1
+
+
+" #########################
+" #### Custom mappings ####
+" #########################
+
+" Press ,* to find the number of occurences of the word under the cursor 
+map ,* *<C-O>:%s///gn<CR>
+
+" Top copy/paste to system cipboard
+nnoremap <C-y> "+y
+vnoremap <C-y> "+y
+nnoremap <C-p> "+p
+vnoremap <C-p> "+p
+
+syntax on
+
+" For OSX backspace
+set backspace=indent,eol,start
+set encoding=utf-8
+
+set rtp+=$HOME/.local/lib/python2.7/site-packages/powerline/bindings/vim/
+
+" Always show statusline
+set laststatus=2
+"
+" " Use 256 colours (Use this setting only if your terminal supports 256
+" colours)
+set t_Co=256
