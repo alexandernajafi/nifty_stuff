@@ -1,0 +1,8 @@
+set -g prefix C-a
+unbind-key C-b
+bind-key C-a send-prefix
+set -g mouse on
+
+bind-key    -T copy-mode    MouseDragEnd1Pane send-keys -X copy-pipe-and-cancel "pbcopy"
+bind-key    -T copy-mode-vi MouseDragEnd1Pane send-keys -X copy-pipe-and-cancel "pbcopy"
+
